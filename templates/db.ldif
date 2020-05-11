@@ -1,12 +1,12 @@
 dn: olcDatabase={2}hdb,cn=config
 changetype: modify
 replace: olcSuffix
-olcSuffix: dc= cartrack,dc=local
+olcSuffix: dc= liquid,dc=local
 
 dn: olcDatabase={2}hdb,cn=config
 changetype: modify
 replace: olcRootDN
-olcRootDN: cn=ldapadm,dc= cartrack,dc=local
+olcRootDN: cn=ldapadm,dc= liquid,dc=local
 
 dn: olcDatabase={2}hdb,cn=config
 changetype: modify
