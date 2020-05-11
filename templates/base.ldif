@@ -1,17 +1,17 @@
-dn: dc= cartrack,dc=local
-dc:  cartrack
+dn: dc= liquid,dc=local
+dc:  liquid
 objectClass: top
 objectClass: domain
 
-dn: cn=ldapadm ,dc= cartrack,dc=local
+dn: cn=ldapadm ,dc= liquid,dc=local
 objectClass: organizationalRole
 cn: ldapadm
 description: LDAP Manager
 
-dn: ou=People,dc= cartrack,dc=local
+dn: ou=People,dc= liquid,dc=local
 objectClass: organizationalUnit
 ou: People
 
-dn: ou=Group,dc= cartrack,dc=local
+dn: ou=Group,dc= liquid,dc=local
 objectClass: organizationalUnit
 ou: Group
