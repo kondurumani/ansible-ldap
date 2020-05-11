@@ -74,7 +74,7 @@ tasks:
   
   - name: Send the configuration base.ldif to the LDAP server
     expect:
-      command: ldapadd -x -W -D "cn=ldapadm,dc=cartrack,dc=local" -f base.ldif
+      command: ldapadd -x -W -D "cn=ldapadm,dc=liquid,dc=local" -f base.ldif
       responses:
         (?i)password: "{{ LDPPASSWORD }}"
     become: true
@@ -87,13 +87,13 @@ tasks:
   
   - name: Create a new user called Bogs in OpenLDAP directory
     expect:
-      command: ldapadd -x -W -D "cn=ldapadm,dc=cartrack,dc=local" -f bogs.ldif
+      command: ldapadd -x -W -D "cn=ldapadm,dc=liquid,dc=local" -f bogs.ldif
       responses:
         (?i)password: "{{ LDPPASSWORD }}"
     become: true
   
   - name: Assign password to User
-    command: ldappasswd -s {{ USERPASSWORD }} -W -D "cn=ldapadm,dc=cartrack,dc=local" -x "uid=bogs,ou=People,dc=cartrack,dc=local"
+    command: ldappasswd -s {{ USERPASSWORD }} -W -D "cn=ldapadm,dc=liquid,dc=local" -x "uid=bogs,ou=People,dc=liquid,dc=local"
     become: true
 
   - name: Add the LDAP service to the firewall (TCP 389)
