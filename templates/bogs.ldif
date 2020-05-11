@@ -1,4 +1,4 @@
-dn: uid=bogs,ou=People,dc= cartrack,dc=local
+dn: uid=bogs,ou=People,dc= liquid,dc=local
 objectClass: top
 objectClass: account
 objectClass: posixAccount
