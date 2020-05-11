@@ -10,7 +10,7 @@ tasks:
     become: true
   
   - name:  Add the client machine to LDAP server for single sign-on
-    command: authconfig --enableldap --enableldapauth --ldapserver=192.168.207.242 --ldapbasedn="dc=cartrack,dc=local" --enablemkhomedir --update
+    command: authconfig --enableldap --enableldapauth --ldapserver=192.168.207.242 --ldapbasedn="dc=liquid,dc=local" --enablemkhomedir --update
     become: true
   
   - name: Restart the LDAP client service
